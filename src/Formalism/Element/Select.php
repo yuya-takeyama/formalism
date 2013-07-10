@@ -8,7 +8,7 @@ class Formalism_Element_Select extends Formalism_Element
         $this->_list = $options['list'];
     }
 
-    public function getHtml(Formalism_Field $field = NULL)
+    public function getHtml(Formalism_Field $field)
     {
         if ($field) {
             $name  = " name=\"{$this->_h($field->getName())}\"";
