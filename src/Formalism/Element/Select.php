@@ -1,5 +1,7 @@
 <?php
-class Formalism_Element_Select extends Formalism_Element
+class Formalism_Element_Select
+    extends Formalism_Element
+    implements Formalism_ElementInterface
 {
     protected $_list;
 

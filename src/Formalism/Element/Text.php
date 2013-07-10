@@ -1,5 +1,7 @@
 <?php
-class Formalism_Element_Text extends Formalism_Element
+class Formalism_Element_Text
+    extends Formalism_Element
+    implements Formalism_ElementInterface
 {
     private $_size;
 
@@ -9,7 +11,7 @@ class Formalism_Element_Text extends Formalism_Element
         $this->_size = isset($options['size']) ? $options['size'] : NULL;
     }
 
-    public function getHtml(Formalism_Field $field = NULL)
+    public function getHtml(Formalism_Field $field)
     {
         $size = $this->_size ? " size=\"{$this->_h($this->_size)}\"" : '';
         if ($field) {

@@ -1,7 +1,9 @@
 <?php
-class Formalism_Element_Date extends Formalism_Element
+class Formalism_Element_Date
+    extends Formalism_Element
+    implements Formalism_ElementInterface
 {
-    public function getHtml(Formalism_Field $field = NULL)
+    public function getHtml(Formalism_Field $field)
     {
         $name = $this->_getName($field);
         $time = $this->_toHash($this->_getValue($field));

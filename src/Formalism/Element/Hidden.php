@@ -1,7 +1,9 @@
 <?php
-class Formalism_Element_Hidden extends Formalism_Element
+class Formalism_Element_Hidden
+    extends Formalism_Element
+    implements Formalism_ElementInterface
 {
-    public function getHtml(Formalism_Field $field = NULL)
+    public function getHtml(Formalism_Field $field)
     {
         if ($field) {
             $name  = " name=\"{$this->_h($field->getName())}\"";
