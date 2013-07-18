@@ -1,5 +1,5 @@
 <?php
-class Formalism_Errors implements Countable
+class Formalism_Errors implements Formalism_ErrorsInterface
 {
     protected $_count = 0;
 
