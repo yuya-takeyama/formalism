@@ -1,4 +1,4 @@
 source 'https://rubygems.org/'
 
-gem 'guard-phpunit', '~> 0.1.4'
+gem 'guard-phpunit2', '~> 0.2.3'
 gem 'rb-inotify', '~> 0.9'
